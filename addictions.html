@@ -7,6 +7,11 @@
     <title>Health on Display</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <link rel="stylesheet" href="css/compare.css">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -31,7 +36,7 @@
                 <ul class="dropdown" role="menu">
                     <li><a href="index.html" class="fr-text">Exposition La santé s'affiche</a><a href="index.html" class="en-text" style="display:none;">Health on Display exhibition</a></li>
                     <li><a href="division_sante.html" class="fr-text">Division santé et ses programmes</a><a href="division_sante.html" class="en-text" style="display:none;">Public health division & programmes</a></li>
-                    <li><a href="index.html#chronologie" class="fr-text">Chronologie</a><a href="index.html#chronologie" class="en-text" style="display:none;">Timeline</a></li>
+                    <li><a href="timeline.html" class="fr-text">Chronologie</a><a href="timeline.html" class="en-text" style="display:none;">Timeline</a></li>
                 </ul>
             </li>
             <li class="nav-item has-dropdown">
@@ -42,8 +47,9 @@
                     <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
                     <li><a href="maladies_infectieuses.html" class="fr-text">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text" style="display:none;">Infectious Diseases</a></li>
                     <li><a href="addictions.html" class="fr-text active">Combattre les addictions</a><a href="addictions.html" class="en-text active" style="display:none;">Combatting addictions</a></li>
-                    <li><a href="nutrition.html" class="fr-text">Nutrition</a><a href="nutrition.html" class="en-text" style="display:none;">Nutrition</a></li>
-                    <li><a href="climat.html" class="fr-text">Climat</a><a href="climat.html" class="en-text" style="display:none;">Climate</a></li>
+                    <li><a href="nutrition.html" class="fr-text">Bien se nourrir</a><a href="nutrition.html" class="en-text" style="display:none;">Eat well</a></li>
+                    <li><a href="climat.html" class="fr-text">Santé et changement climatique</a><a href="climat.html" class="en-text" style="display:none;">Health and climate change</a></li>
+                    <li><a href="filter.html" class="fr-text">Affiches "La santé s'affiche"</a><a href="filter.html" class="en-text" style="display:none;">Posters "Health on display"</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -79,9 +85,6 @@
         </div>
         
         <div class="card">
-            <div class="card-icon">
-                <i class="fa-solid fa-smoking"></i>
-            </div>
             <h2 class="fr-text">Le tabac c'est tabou !</h2>
             <h2 class="en-text" style="display:none;">Smoking is taboo!</h2>
             <p class="fr-text">
@@ -99,10 +102,18 @@
             </p>
         </div>
         
-        <div class="card">
-            <div class="card-icon">
-                <i class="fa-solid fa-wine-glass"></i>
+        <div class="section">
+            <div class="gallery-grid" id="gallery1">
+                <div class="gallery-item" data-index="0" onclick="openLightbox(0)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="1" onclick="openLightbox(1)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="2" onclick="openLightbox(2)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="3" onclick="openLightbox(3)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="4" onclick="openLightbox(4)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="5" onclick="openLightbox(5)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
             </div>
+        </div>
+        
+        <div class="card">
             <h2 class="fr-text">L'alcool, ennemi de votre santé</h2>
             <h2 class="en-text" style="display:none;">Alcohol, an enemy of your health</h2>
             <p class="fr-text">
@@ -113,14 +124,50 @@
             </p>
         </div>
         
+        <div class="section">
+            <div class="gallery-grid" id="gallery1">
+                <div class="gallery-item" data-index="0" onclick="openLightbox(0)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="1" onclick="openLightbox(1)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="2" onclick="openLightbox(2)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="3" onclick="openLightbox(3)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+                <div class="gallery-item" data-index="4" onclick="openLightbox(4)"><iframe src="https://www.spc.int/digitallibrary/get/2gmz2"></iframe></div>
+                <div class="gallery-item" data-index="5" onclick="openLightbox(5)"><iframe src="https://www.spc.int/digitallibrary/get/meazi"></iframe></div>
+            </div>
+        </div>
+        
+        <!-- affiche différente langue -->
+        <!-- Wrapper pour deux sliders côte à côte -->
+        <div class="image-compare-wrapper">
+             <section class="image-compare-section" aria-label="Image comparison">
+                 <div class="img-comp-container" aria-hidden="false" data-slider-color="#003dA5" data-color-controls="true">
+                     <div class="img-comp-img">
+                         <iframe title="Affiche A" src="https://www.spc.int/digitallibrary/get/o74n9" loading="lazy"></iframe>
+                     </div>
+                     <div class="img-comp-img img-comp-overlay">
+                         <iframe title="Affiche B" src="https://www.spc.int/digitallibrary/get/dx65r" loading="lazy"></iframe>
+                     </div>
+                 </div>
+             </section>
+
+             <section class="image-compare-section" aria-label="Image comparison">
+                 <div class="img-comp-container" aria-hidden="false" data-slider-color="#FF7A59" data-color-controls="true">
+                     <div class="img-comp-img">
+                         <iframe title="Affiche C" src="https://www.spc.int/digitallibrary/get/o74n9" loading="lazy"></iframe>
+                     </div>
+                     <div class="img-comp-img img-comp-overlay">
+                         <iframe title="Affiche D" src="https://www.spc.int/digitallibrary/get/dx65r" loading="lazy"></iframe>
+                     </div>
+                 </div>
+             </section>
+        </div>
+        
         <!-- Navigation vers autres thématiques -->
         <div style="text-align: center; margin: 3rem 0;">
             <h3 class="fr-text" style="color: var(--pantone-293); margin-bottom: 2rem;">Découvrez d'autres thématiques</h3>
             <h3 class="en-text" style="display:none; color: var(--pantone-293); margin-bottom: 2rem;">Discover other themes</h3>
             <a href="nutrition.html" class="btn fr-text">BIEN SE NOURRIR</a>
             <a href="nutrition.html" class="btn en-text" style="display:none;">EAT WELL</a>
-        </div>
-        
+        </div>    
     </div>
     
     <!-- Footer -->
@@ -130,5 +177,6 @@
     </footer>
     
     <script src="js/script.js"></script>
+    <script src="js/compare.js"></script>
 </body>
 </html>

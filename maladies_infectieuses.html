@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/maladies_infectieuses.css">
     <link rel="stylesheet" href="css/carrousel.css">
+    <link rel="stylesheet" href="css/grid_img.css">
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -32,7 +36,7 @@
                 <ul class="dropdown" role="menu">
                     <li><a href="index.html" class="fr-text">Exposition La santé s'affiche</a><a href="index.html" class="en-text" style="display:none;">Health on Display exhibition</a></li>
                     <li><a href="division_sante.html" class="fr-text">Division santé et ses programmes</a><a href="division_sante.html" class="en-text" style="display:none;">Public health division & programmes</a></li>
-                    <li><a href="index.html#chronologie" class="fr-text">Chronologie</a><a href="index.html#chronologie" class="en-text" style="display:none;">Timeline</a></li>
+                    <li><a href="timeline.html" class="fr-text">Chronologie</a><a href="timeline.html" class="en-text" style="display:none;">Timeline</a></li>
                 </ul>
             </li>
             <li class="nav-item has-dropdown">
@@ -43,9 +47,10 @@
                     <li><a href="hygiene_vie.html" class="fr-text">Hygiène de vie</a><a href="hygiene_vie.html" class="en-text" style="display:none;">Healthy Living</a></li>
                     <li><a href="maladies_infectieuses.html" class="fr-text active">Maladies infectieuses</a><a href="maladies_infectieuses.html" class="en-text active" style="display:none;">Infectious Diseases</a></li>
                     <li><a href="addictions.html" class="fr-text">Combattre les addictions</a><a href="addictions.html" class="en-text" style="display:none;">Combatting addictions</a></li>
-                    <li><a href="nutrition.html" class="fr-text">Nutrition</a><a href="nutrition.html" class="en-text" style="display:none;">Nutrition</a></li>
-                    <li><a href="climat.html" class="fr-text">Climat</a><a href="climat.html" class="en-text" style="display:none;">Climate</a></li>
-                </ul>
+                    <li><a href="nutrition.html" class="fr-text">Bien se nourrir</a><a href="nutrition.html" class="en-text" style="display:none;">Eat well</a></li>
+                    <li><a href="climat.html" class="fr-text">Santé et changement climatique</a><a href="climat.html" class="en-text" style="display:none;">Health and climate change</a></li>
+                    <li><a href="filter.html" class="fr-text">Affiches "La santé s'affiche"</a><a href="filter.html" class="en-text" style="display:none;">Posters "Health on display"</a></li>
+                </ul> 
             </li>
             <li class="nav-item">
                 <div class="language-switch">
@@ -67,9 +72,6 @@
     <!-- Contenu principal -->
     <div class="main-container">
         <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-virus"></i>
-            </div>
             <h2 class="fr-text">Lutte anti-infectieuse</h2>
             <h2 class="en-text" style="display:none;">Infection prevention and control</h2>
             <p class="fr-text">
@@ -87,11 +89,77 @@
             <span class="en-text" style="display:none;">Standard precautions</span>
         </h2>
         
+        <!-- Image Grid 1 - Hygiène des mains, EPI, Hygiène respiratoire -->
+    <div class="pdf-grid-container">
+        <div class="pdf-grid-row">
+            <!-- Colonne 1 : Hygiène des mains -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/dyvqz', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/dyvqz#view=FitH" title="Hygiène des mains 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/y5y5p', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/y5y5p#view=FitH" title="Hygiène des mains 2" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/tstva', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/tstva#view=FitH" title="Hygiène des mains 3" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- Colonne 2 : EPI -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/2g67v', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/2g67v#view=FitH" title="EPI 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/x4jm3', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/x4jm3#view=FitH" title="EPI 2" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/dpd8e', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/dpd8e#view=FitH" title="EPI 3" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- Colonne 3 : Hygiène respiratoire -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/94z4z', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/94z4z#view=FitH" title="Hygiène respiratoire 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/8tica', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/8tica#view=FitH" title="Hygiène respiratoire 2" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/4t4wk', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/4t4wk#view=FitH" title="Hygiène respiratoire 3" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- Colonne 4 : Prévention COVID-19 -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/fzs9k', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/fzs9k#view=FitH" title="Prévention 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/tcya6', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/tcya6#view=FitH" title="Prévention 2" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/8oxbn', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/8oxbn#view=FitH" title="Prévention 3" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
         <div class="grid">
             <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-hands-wash"></i>
-                </div>
                 <h3 class="fr-text">Hygiène des mains</h3>
                 <h3 class="en-text" style="display:none;">Hand hygiene</h3>
                 <p class="fr-text">
@@ -107,9 +175,6 @@
             </div>
             
             <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-shield-virus"></i>
-                </div>
                 <h3 class="fr-text">Équipements de protection individuelle (EPI)</h3>
                 <h3 class="en-text" style="display:none;">Personal protective equipment (PPE)</h3>
                 <p class="fr-text">
@@ -124,9 +189,6 @@
             </div>
             
             <div class="card">
-                <div class="card-icon">
-                    <i class="fas fa-head-side-mask"></i>
-                </div>
                 <h3 class="fr-text">Hygiène respiratoire</h3>
                 <h3 class="en-text" style="display:none;">Respiratory hygiene</h3>
                 <p class="fr-text">
@@ -164,10 +226,60 @@
             <span class="en-text" style="display:none;">Mosquito-borne diseases: a constant threat</span>
         </h2>
         
-        <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-mosquito"></i>
+        <!-- Image Grid 2 - Moustiques, Dengue, Zika, Chikungunya -->
+    <div class="pdf-grid-container">
+        <div class="pdf-grid-row">
+            <!-- Colonne 1 : Moustiques -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/k5xpv', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/k5xpv#view=FitH" title="Moustiques 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/mdmke', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/mdmke#view=FitH" title="Moustiques 2" loading="lazy"></iframe>
+                </div>
             </div>
+            
+            <!-- Colonne 2 : Dengue -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/cnc5f', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/cnc5f#view=FitH" title="Dengue 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/cf97t', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/cf97t#view=FitH" title="Dengue 2" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- Colonne 3 : Zika -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/4uokb', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/4uokb#view=FitH" title="Zika 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/c9yhn', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/c9yhn#view=FitH" title="Zika 2" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <!-- Colonne 4 : Filariose -->
+            <div class="pdf-grid-column">
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/fsrb3', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/fsrb3#view=FitH" title="Filariose 1" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-item">
+                    <button class="pdf-open-btn" onclick="window.open('https://www.spc.int/digitallibrary/get/38nmi', '_blank')">↗ Ouvrir</button>
+                    <iframe src="https://www.spc.int/digitallibrary/get/38nmi#view=FitH" title="Filariose 2" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="card">
             <h2 class="fr-text">Une menace constante</h2>
             <h2 class="en-text" style="display:none;">A constant threat</h2>
             <p class="fr-text">
@@ -217,9 +329,6 @@
         </div>
         
         <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-gamepad"></i>
-            </div>
             <h3 class="fr-text">Jeu interactif</h3>
             <h3 class="en-text" style="display:none;">Interactive game</h3>
             <p class="fr-text">
@@ -238,9 +347,6 @@
         </h2>
         
         <div class="card">
-            <div class="card-icon">
-                <i class="fa-solid fa-user-shield"></i>
-            </div>
             <h2 class="fr-text">Protégez-vous !</h2>
             <h2 class="en-text" style="display:none;">Use protection!</h2>
             <p class="fr-text">
@@ -257,11 +363,8 @@
             <span class="fr-text">Rassemblements de masse</span>
             <span class="en-text" style="display:none;">Mass gatherings</span>
         </h2>
-        
+
         <div class="card">
-            <div class="card-icon">
-                <i class="fas fa-users"></i>
-            </div>
             <h2 class="fr-text">Rassemblements de masse</h2>
             <h2 class="en-text" style="display:none;">Mass gatherings</h2>
             <p class="fr-text">
@@ -281,34 +384,7 @@
                 that have tips on staying safe and healthy during and after the events.
             </p>
         </div>
-        
-        <!-- Carrousel Section -->
-        <div class="carousel-container">
-            <!-- Slides -->
-            <div class="carousel-slides">
-                <div class="carousel-slide active">
-                    <iframe src="https://www.example.com/slide1" title="Slide 1"></iframe>
-                </div>
-                <div class="carousel-slide">
-                    <iframe src="https://www.example.com/slide2" title="Slide 2"></iframe>
-                </div>
-                <div class="carousel-slide">
-                    <iframe src="https://www.example.com/slide3" title="Slide 3"></iframe>
-                </div>
-            </div>
-            
-            <!-- Navigation Buttons -->
-            <button class="carousel-nav prev-btn">&#10094;</button>
-            <button class="carousel-nav next-btn">&#10095;</button>
-            
-            <!-- Dots -->
-            <div class="carousel-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-        
+
         <!-- Navigation vers autres thématiques -->
         <div style="text-align: center; margin: 3rem 0;">
             <h3 class="fr-text" style="color: var(--pantone-293); margin-bottom: 2rem;">Découvrez d'autres thématiques</h3>
@@ -326,5 +402,6 @@
     
     <script src="js/script.js"></script>
     <script src="js/maladies_infectieuses.js"></script>
+    <script src="js/grid_image.js"></script>
 </body>
 </html>
