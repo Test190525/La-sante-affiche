@@ -36,6 +36,7 @@
 }
 
 .flip-front {
+    background-color: var(--pantone-3125);
     font-size: 1.2em;
     color: rgb(0, 0, 0);
     display: flex;
@@ -45,7 +46,7 @@
 }
 
 .flip-front h3 {
-    margin-top: -8vh;
+    margin-top: -6vh;
 }
 
 .flip-back {

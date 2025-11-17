@@ -528,3 +528,9 @@
         padding: 1rem;
     }
 }
+
+/*Bulletin*/
+.card-img img {
+    width: 150px;
+    height: auto;
+}
